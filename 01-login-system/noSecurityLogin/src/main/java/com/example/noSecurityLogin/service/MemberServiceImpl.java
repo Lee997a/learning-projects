@@ -37,6 +37,7 @@ public class MemberServiceImpl implements MemberService{
     public Member login(MemberDTO memberDTO) {
         // 이메일로 회원 찾기
         Member member = memberRepository.findByEmail(memberDTO.getEmail())
+                // IllegalArgumentException -> 메서드에 전달된 인수가 잘못된 경우 발생하는 예외
                 .orElseThrow(() -> new IllegalArgumentException("존재하지 않는 이메일입니다."));
 
         // 비밀번호 검증
