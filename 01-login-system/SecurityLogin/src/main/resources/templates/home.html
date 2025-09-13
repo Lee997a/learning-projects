@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+  <meta charset="UTF-8">
+  <title>home</title>
+
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    .container { max-width: 800px; margin: 0 auto; }
+    .btn { padding: 10px 20px; margin: 5px; text-decoration: none;
+           background-color: #007bff; color: white; border-radius: 5px; }
+    .btn:hover { background-color: #0056b3; }
+  </style>
+
+</head>
+<body>
+<div class="container">
+  <h1>Spring Security 로그인 시스템</h1>
+
+  <!-- 로그인된 사용자 -->
+  <div sec:authorize="isAuthenticated()">
+    <h2>환영합니다, <span sec:authentication="principal.nickname"></span>님!</h2>
+    <p>이메일: <span sec:authentication="principal.username"></span></p>
+    <p>권한: <span sec:authentication="principal.authorities"></span></p>
+
+    <!-- 🆕 가입일 표시 -->
+    <p>가입일: <span th:text="${#temporals.format(member.createDate, 'yyyy년 MM월 dd일 HH:mm')}"></span></p>
+
+    <a href="/mypage" class="btn">마이페이지</a>
+    <form th:action="@{/logout}" method="post" style="display: inline;">
+      <button type="submit" class="btn" style="background-color: #dc3545;">로그아웃</button>
+    </form>
+  </div>
+
+  <!-- 비로그인 사용자 -->
+  <div sec:authorize="!isAuthenticated()">
+    <p>로그인이 필요합니다.</p>
+    <a href="/login" class="btn">로그인</a>
+    <a href="/join" class="btn">회원가입</a>
+  </div>
+</div>
+</body>
+</html>

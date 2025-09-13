@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>join</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    .container { max-width: 400px; margin: 0 auto; }
+    .form-group { margin-bottom: 15px; }
+    label { display: block; margin-bottom: 5px; }
+    input[type="email"], input[type="password"], input[type="text"] {
+        width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px;
+    }
+    .btn { width: 100%; padding: 12px; background-color: #28a745;
+           color: white; border: none; border-radius: 4px; cursor: pointer; }
+    .btn:hover { background-color: #218838; }
+    .alert { padding: 10px; margin-bottom: 15px; border-radius: 4px; }
+    .alert-danger { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+    .error { color: #721c24; font-size: 0.875em; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h2>회원가입</h2>
+
+  <!-- 에러 메시지 -->
+  <div th:if="${error}" class="alert alert-danger">
+    <p th:text="${error}"></p>
+  </div>
+
+  <form th:action="@{/join}" method="post" th:object="${memberDTO}">
+    <div class="form-group">
+      <label for="email">이메일:</label>
+      <input type="email" id="email" th:field="*{email}">
+      <div class="error" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></div>
+    </div>
+
+    <div class="form-group">
+      <label for="password">비밀번호:</label>
+      <input type="password" id="password" th:field="*{password}">
+      <div class="error" th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></div>
+    </div>
+
+    <div class="form-group">
+      <label for="nickname">닉네임:</label>
+      <input type="text" id="nickname" th:field="*{nickname}">
+      <div class="error" th:if="${#fields.hasErrors('nickname')}" th:errors="*{nickname}"></div>
+    </div>
+
+    <div class="form-group">
+      <label for="phoneNumber">전화번호:</label>
+      <input type="text" id="phoneNumber" th:field="*{phoneNumber}">
+      <div class="error" th:if="${#fields.hasErrors('phoneNumber')}" th:errors="*{phoneNumber}"></div>
+    </div>
+
+    <button type="submit" class="btn">가입하기</button>
+  </form>
+
+  <p style="text-align: center; margin-top: 20px;">
+    <a href="/login">로그인</a> | <a href="/">홈으로</a>
+  </p>
+</div>
+</body>
+</html>

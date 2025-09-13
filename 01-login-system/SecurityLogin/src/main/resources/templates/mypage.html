@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>MyPage</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    .container { max-width: 600px; margin: 0 auto; }
+    .info-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    .info-table th, .info-table td {
+        padding: 12px; text-align: left; border-bottom: 1px solid #ddd;
+    }
+    .info-table th { background-color: #f8f9fa; }
+    .btn { padding: 10px 20px; margin: 5px; text-decoration: none;
+           background-color: #007bff; color: white; border-radius: 5px; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>마이페이지</h1>
+
+  <table class="info-table">
+    <tr>
+      <th>이메일</th>
+      <td sec:authentication="principal.username"></td>
+    </tr>
+    <tr>
+      <th>닉네임</th>
+      <td sec:authentication="principal.nickname"></td>
+    </tr>
+    <tr>
+      <th>전화번호</th>
+      <td sec:authentication="principal.phoneNumber"></td>
+    </tr>
+    <tr>
+      <th>권한</th>
+      <td sec:authentication="principal.authorities"></td>
+    </tr>
+    <!-- 🆕 가입일과 수정일 표시 -->
+    <tr>
+      <th>가입일</th>
+      <td th:text="${#temporals.format(member.createDate, 'yyyy년 MM월 dd일 HH:mm')}"></td>
+    </tr>
+    <tr>
+      <th>마지막 수정일</th>
+      <td th:text="${#temporals.format(member.lastModifiedDate, 'yyyy년 MM월 dd일 HH:mm')}"></td>
+    </tr>
+  </table>
+
+  <div style="margin-top: 20px;">
+    <a href="/" class="btn">홈으로</a>
+    <form th:action="@{/logout}" method="post" style="display: inline;">
+      <button type="submit" class="btn" style="background-color: #dc3545;">로그아웃</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>
