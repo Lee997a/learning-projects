@@ -174,7 +174,6 @@ http://localhost:8080/h2-console
 - [ ] 입력값 유효성 검증 강화
 - [ ] Spring Security 적용 버전 추가
 - [ ] JWT 토큰 기반 인증 구현
-- [ ] MySQL/PostgreSQL 연동
 
 ## 👨‍💻 개발자
 
