@@ -6,7 +6,7 @@
 
 | 순번 | 프로젝트명                         | 기술스택         | 상태      | 설명             |
 | ---- | ---------------------------------- | ---------------- | --------- | ---------------- |
-| 01   | [로그인 시스템](./noSecurityLogin) | HTML, Spring Boot, Spring Data JPA, MySQL    | ✔️ 완료 | 기본 로그인 기능 |
+| 01   | [로그인 시스템 (시큐리티 X) ](./noSecurityLogin) | HTML, Spring Boot, Spring Data JPA, MySQL    | ✔️ 완료 | 기본 로그인 기능 |
 
 ## 🎯 현재 학습 중
 
