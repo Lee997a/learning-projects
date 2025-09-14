@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4ecd2b4-160c-41db-899c-76ad9aa12a98" name="변경" comment="" />
+    <list default="true" id="d4ecd2b4-160c-41db-899c-76ad9aa12a98" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/../JWTSecurityLogin2/src/main/java/com/example/JWTSecurityLogin2/config/JwtProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JWTSecurityLogin2/src/main/java/com/example/JWTSecurityLogin2/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JWTSecurityLogin2/src/main/java/com/example/JWTSecurityLogin2/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JWTSecurityLogin2/src/main/java/com/example/JWTSecurityLogin2/dto/JwtResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JWTSecurityLogin2/src/main/java/com/example/JWTSecurityLogin2/dto/LoginRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JWTSecurityLogin2/src/main/java/com/example/JWTSecurityLogin2/dto/SignupRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JWTSecurityLogin2/src/main/java/com/example/JWTSecurityLogin2/entity/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JWTSecurityLogin2/src/main/java/com/example/JWTSecurityLogin2/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JWTSecurityLogin2/src/main/java/com/example/JWTSecurityLogin2/repository/MemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JWTSecurityLogin2/src/main/java/com/example/JWTSecurityLogin2/security/JwtAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JWTSecurityLogin2/src/main/java/com/example/JWTSecurityLogin2/service/CustomUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JWTSecurityLogin2/src/main/java/com/example/JWTSecurityLogin2/service/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JWTSecurityLogin2/src/main/java/com/example/JWTSecurityLogin2/util/JwtTokenUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +29,23 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="JWTSecurityLogin" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -26,34 +58,34 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Lee997a"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Lee997a&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Lee997a/learning-projects.git",
-    "accountId": "d2338c69-0a69-42a9-adfc-c687263e920b"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Lee997a/learning-projects.git&quot;,
+    &quot;accountId&quot;: &quot;d2338c69-0a69-42a9-adfc-c687263e920b&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="32gRAz7AC27AYwCIIkpdqbdO18E" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.JWTSecurityLogin [:com.example.JWTSecurityLogin.JwtSecurityLoginApplication.main()].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.JWTSecurityLogin [:com.example.JWTSecurityLogin.JwtSecurityLoginApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="JwtSecurityLoginApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.JWTSecurityLogin.JwtSecurityLoginApplication" />
