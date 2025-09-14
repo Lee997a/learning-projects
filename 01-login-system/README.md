@@ -9,6 +9,7 @@
 | 01   | [로그인 시스템 (시큐리티 X) ](./noSecurityLogin) | HTML, Spring Boot, Spring Data JPA, MySQL    | ✔️ 완료 | 기본 로그인 기능 |
 | 02   | [로그인 시스템 (시큐리티 O) ](./SecurityLogin) | HTML, Spring Boot, Spring Data JPA, Spring Securiey, MySQL    | ✔️ 완료 | 기본 로그인 기능 |
 | 03   | [로그인 시스템 (시큐리티 O) ](./JWTSecurityLogin) | HTML, Spring Boot, Spring Data JPA, Spring Securiey, JWTToken, MySQL    | ✔️ 완료 | 기본 로그인 기능 |
+| 03   | [로그인 시스템 (시큐리티 O) ](./JWTSecurityLogin2) | HTML, Spring Boot, Spring Data JPA, Spring Securiey, JWTToken, MySQL    | ✔️ 완료 | 기본 로그인 기능 및 웹 화면 구현 |
 
 ## 🎯 현재 학습 중
 
