@@ -6,14 +6,14 @@
 
 | 순번 | 프로젝트명                         | 기술스택         | 상태      | 설명             |
 | ---- | ---------------------------------- | ---------------- | --------- | ---------------- |
-| 01   | [로그인 시스템](./01-login-system) | HTML, CSS, JS    | 🚧 진행중 | 기본 로그인 기능 |
-| 02   | [게시판 시스템](./02-board-system) | Node.js, Express | ⏳ 예정   | CRUD 게시판      |
+| 01   | [로그인 시스템](./01-login-system) | HTML, CSS, JS, Spring Boot, MySql  | 🚧 진행중 | 기본 로그인 기능 |
+| 02   | [게시판 시스템](./02-board-system) | HTML, CSS, JS, Spring Boot, MySql  | 🚧 진행중   | CRUD 게시판 |
 
 ## 🎯 현재 학습 중
 
 - 백엔드 기초 (Node.js)
 - 데이터베이스 연동 (MySQL)
-- 프론트엔드 기초 (React)
+- 프론트엔드 기초 (React) (예정)
 
 ## 🔗 핵심 프로젝트
 
