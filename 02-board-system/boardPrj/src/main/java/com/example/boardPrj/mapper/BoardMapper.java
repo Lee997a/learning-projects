@@ -2,6 +2,7 @@ package com.example.boardPrj.mapper;
 
 import com.example.boardPrj.dto.BoardDTO;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -25,4 +26,7 @@ public interface BoardMapper {
 
     // 전체 게시글 수 조회
     int count();
+
+    // 좋아요 수 업데이트
+    int updateLikeCount(@Param("boardId") Long boardId, @Param("likeCount") int likeCount);
 }

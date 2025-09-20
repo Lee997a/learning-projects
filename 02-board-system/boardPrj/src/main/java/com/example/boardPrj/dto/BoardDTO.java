@@ -12,6 +12,7 @@ public class BoardDTO {
     private String content; // 내용
     private String writer;  // 작성자
     private LocalDateTime createdAt;    // 작성일
+    private Integer likeCount;
 
     public BoardDTO(){
         this.title = title;

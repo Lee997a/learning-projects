@@ -29,6 +29,7 @@
         <th>번호</th>
         <th>제목</th>
         <th>작성자</th>
+        <th>좋아요</th> <!-- 추가 -->
         <th>작성일</th>
       </tr>
       </thead>
@@ -41,10 +42,16 @@
              class="text-decoration-none"></a>
         </td>
         <td th:text="${board.writer}"></td>
+        <td> <!-- 좋아요 수 표시 -->
+          <span class="text-danger">
+                    <i class="bi bi-heart-fill"></i>
+                    <span th:text="${board.likeCount}">0</span>
+                </span>
+        </td>
         <td th:text="${#temporals.format(board.createdAt, 'yyyy-MM-dd HH:mm')}"></td>
       </tr>
       <tr th:if="${#lists.isEmpty(boards)}">
-        <td colspan="4" class="text-center">등록된 게시글이 없습니다.</td>
+        <td colspan="5" class="text-center">등록된 게시글이 없습니다.</td> <!-- colspan 수정 -->
       </tr>
       </tbody>
     </table>

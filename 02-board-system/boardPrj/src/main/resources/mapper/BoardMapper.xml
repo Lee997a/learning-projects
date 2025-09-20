@@ -5,14 +5,16 @@
 
 <!-- 전체 게시글 조회-->
     <select id="findAll" resultType="BoardDTO">
-        select id, title, content, writer, created_at as createdAt
-        from board
-        order by created_at desc
+        SELECT id, title, content, writer, created_at as createdAt,
+        COALESCE(like_count, 0) as likeCount
+        FROM board
+        ORDER BY created_at DESC
     </select>
 
     <!-- 특정 게시글 조회 -->
     <select id="findById" parameterType="Long" resultType="BoardDTO">
-        SELECT id, title, content, writer, created_at as createdAt
+        SELECT id, title, content, writer, created_at as createdAt,
+        COALESCE(like_count, 0) as likeCount
         FROM board
         WHERE id = #{id}
     </select>
@@ -36,5 +38,13 @@
     <select id="count" resultType="int">
         select count(*) from board
     </select>
+
+
+    <update id="updateLikeCount">
+        UPDATE board
+        SET like_count = #{likeCount}
+        WHERE id = #{boardId}
+    </update>
+
 
 </mapper>
