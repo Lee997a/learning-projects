@@ -15,7 +15,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/api")
 public class TestController {
-
+     
     @GetMapping("/user/test")
     @PreAuthorize("hasRole('USER')")
     public ResponseEntity<String> userTest() {
